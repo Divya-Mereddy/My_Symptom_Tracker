@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A4D80EE1F3CDA9E00948A2C /* ConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */; };
+		5A75B20C1F3E29870053FACF /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B20B1F3E29870053FACF /* SymptomsViewController.swift */; };
+		5A75B20F1F3E3F2D0053FACF /* SymptomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */; };
+		5A94A17B1F38FFE000BF6DD0 /* ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD301E1F30D5C4009C7F8A /* ConditionsViewController.swift */; };
 		5ABD301D1F30D5C4009C7F8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */; };
-		5ABD301F1F30D5C4009C7F8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD301E1F30D5C4009C7F8A /* ViewController.swift */; };
 		5ABD30221F30D5C4009C7F8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABD30201F30D5C4009C7F8A /* Main.storyboard */; };
 		5ABD30241F30D5C4009C7F8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ABD30231F30D5C4009C7F8A /* Assets.xcassets */; };
 		5ABD30271F30D5C4009C7F8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABD30251F30D5C4009C7F8A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionCell.swift; sourceTree = "<group>"; };
+		5A75B20B1F3E29870053FACF /* SymptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
+		5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomCell.swift; sourceTree = "<group>"; };
 		5ABD30191F30D5C4009C7F8A /* Symptom Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Symptom Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5ABD301E1F30D5C4009C7F8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5ABD301E1F30D5C4009C7F8A /* ConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsViewController.swift; sourceTree = "<group>"; };
 		5ABD30211F30D5C4009C7F8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5ABD30231F30D5C4009C7F8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5ABD30261F30D5C4009C7F8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A75B20D1F3E299F0053FACF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5ABD301E1F30D5C4009C7F8A /* ConditionsViewController.swift */,
+				5A75B20B1F3E29870053FACF /* SymptomsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		5ABD30101F30D5C4009C7F8A = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */,
-				5ABD301E1F30D5C4009C7F8A /* ViewController.swift */,
+				5A75B20D1F3E299F0053FACF /* View Controllers */,
+				5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */,
+				5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */,
 				5ABD30201F30D5C4009C7F8A /* Main.storyboard */,
 				5ABD30231F30D5C4009C7F8A /* Assets.xcassets */,
 				5ABD30251F30D5C4009C7F8A /* LaunchScreen.storyboard */,
@@ -137,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ABD301F1F30D5C4009C7F8A /* ViewController.swift in Sources */,
+				5A94A17B1F38FFE000BF6DD0 /* ConditionsViewController.swift in Sources */,
+				5A4D80EE1F3CDA9E00948A2C /* ConditionCell.swift in Sources */,
+				5A75B20C1F3E29870053FACF /* SymptomsViewController.swift in Sources */,
+				5A75B20F1F3E3F2D0053FACF /* SymptomCell.swift in Sources */,
 				5ABD301D1F30D5C4009C7F8A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +324,7 @@
 				5ABD302D1F30D5C4009C7F8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
