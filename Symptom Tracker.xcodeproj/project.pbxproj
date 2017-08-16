@@ -10,6 +10,7 @@
 		5A4D80EE1F3CDA9E00948A2C /* ConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */; };
 		5A75B20C1F3E29870053FACF /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B20B1F3E29870053FACF /* SymptomsViewController.swift */; };
 		5A75B20F1F3E3F2D0053FACF /* SymptomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */; };
+		5A94910A1F4209C200521115 /* Symptom Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A9491081F4209C200521115 /* Symptom Tracker.xcdatamodeld */; };
 		5A94A17B1F38FFE000BF6DD0 /* ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD301E1F30D5C4009C7F8A /* ConditionsViewController.swift */; };
 		5ABD301D1F30D5C4009C7F8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */; };
 		5ABD30221F30D5C4009C7F8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABD30201F30D5C4009C7F8A /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionCell.swift; sourceTree = "<group>"; };
 		5A75B20B1F3E29870053FACF /* SymptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomCell.swift; sourceTree = "<group>"; };
+		5A9491091F4209C200521115 /* Symptom Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Symptom Tracker.xcdatamodel"; sourceTree = "<group>"; };
 		5ABD30191F30D5C4009C7F8A /* Symptom Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Symptom Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ABD301E1F30D5C4009C7F8A /* ConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */,
+				5A9491081F4209C200521115 /* Symptom Tracker.xcdatamodeld */,
 				5A75B20D1F3E299F0053FACF /* View Controllers */,
 				5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */,
 				5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */,
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A94A17B1F38FFE000BF6DD0 /* ConditionsViewController.swift in Sources */,
+				5A94910A1F4209C200521115 /* Symptom Tracker.xcdatamodeld in Sources */,
 				5A4D80EE1F3CDA9E00948A2C /* ConditionCell.swift in Sources */,
 				5A75B20C1F3E29870053FACF /* SymptomsViewController.swift in Sources */,
 				5A75B20F1F3E3F2D0053FACF /* SymptomCell.swift in Sources */,
@@ -327,6 +331,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5A9491081F4209C200521115 /* Symptom Tracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5A9491091F4209C200521115 /* Symptom Tracker.xcdatamodel */,
+			);
+			currentVersion = 5A9491091F4209C200521115 /* Symptom Tracker.xcdatamodel */;
+			path = "Symptom Tracker.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5ABD30111F30D5C4009C7F8A /* Project object */;
 }
