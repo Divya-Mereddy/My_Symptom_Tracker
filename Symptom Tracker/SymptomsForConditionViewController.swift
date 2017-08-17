@@ -56,7 +56,10 @@ extension SymptomsForConditionViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SymptomCell", for:
                 indexPath) as! SymptomCell
             let symptom = condition.symptoms[indexPath.row]
+            cell.symptom = symptom
             cell.label.text = symptom.name
+            cell.displayTimeLabel.text = symptom.dateHash
+            cell.intensityControl.selectedSegmentIndex = symptom.intensity - 1
             return cell
     }
 }

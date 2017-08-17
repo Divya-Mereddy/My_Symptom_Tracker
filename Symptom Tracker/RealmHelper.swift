@@ -31,12 +31,13 @@ class RealmHelper {
         return realm.objects(Condition.self)
     }
     
-    static func updateSymptom(symptomToBeUpdated: Symptom, newSymptom: Symptom) {
+    static func updateSymptom(symptomToBeUpdated: Symptom, newIntensity: Int) {
         let realm = try! Realm()
         try! realm.write() {
-            symptomToBeUpdated.name = newSymptom.name
-            symptomToBeUpdated.intensity = newSymptom.intensity
+            symptomToBeUpdated.intensity = newIntensity
         }
     }
+    
+    
 }
 

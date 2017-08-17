@@ -7,17 +7,23 @@
 //
 
 import UIKit
+import RealmSwift
 
 class SymptomCell: UITableViewCell {
     
     @IBOutlet var label: UILabel!
+    @IBOutlet var displayTimeLabel: UILabel!
+    @IBOutlet var intensityControl: UISegmentedControl!
     
-    var symptom: String!
+    var symptom: Symptom!
     
     override func awakeFromNib() {
         label.layer.cornerRadius = 3.0
     }
     
-    @IBOutlet var displayTimeLabel: UILabel!
+    @IBAction func intensityControlValueDidChange(sender: UISegmentedControl) {
+        print(sender.selectedSegmentIndex)
+        RealmHelper.updateSymptom(symptomToBeUpdated: symptom, newIntensity: sender.selectedSegmentIndex + 1)
+    }
     
 }

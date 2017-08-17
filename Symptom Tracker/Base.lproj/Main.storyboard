@@ -170,9 +170,12 @@
                                                         <segment title="10"/>
                                                     </segments>
                                                     <color key="tintColor" red="0.32417553659999998" green="0.65236485" blue="0.97215157750000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <connections>
+                                                        <action selector="intensityControlValueDidChangeWithSender:" destination="JqC-u2-5H7" eventType="valueChanged" id="4ER-pz-sig"/>
+                                                    </connections>
                                                 </segmentedControl>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loM-1X-RTl">
-                                                    <rect key="frame" x="179" y="7" width="116" height="28"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11/26/2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loM-1X-RTl">
+                                                    <rect key="frame" x="206" y="7" width="89" height="28"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -193,6 +196,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="displayTimeLabel" destination="loM-1X-RTl" id="Y28-hD-SiM"/>
+                                            <outlet property="intensityControl" destination="dw8-cW-Tda" id="DPj-ow-aXf"/>
                                             <outlet property="label" destination="mok-Hs-fTX" id="Jcg-Ed-bWl"/>
                                         </connections>
                                     </tableViewCell>
