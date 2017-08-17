@@ -18,4 +18,6 @@ class SymptomCell: UITableViewCell {
         label.layer.cornerRadius = 3.0
     }
     
+    @IBOutlet var displayTimeLabel: UILabel!
+    
 }

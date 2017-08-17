@@ -156,7 +156,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="303" height="40"/>
                                                     <color key="backgroundColor" red="0.32417553659999998" green="0.65236485" blue="0.97215157750000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wheezing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mok-Hs-fTX">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wheezing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mok-Hs-fTX" userLabel="Symptom Label">
                                                     <rect key="frame" x="16" y="0.0" width="271" height="40"/>
                                                     <color key="backgroundColor" red="0.32417553659999998" green="0.65236485" blue="0.97215157750000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -182,6 +182,13 @@
                                                     </segments>
                                                     <color key="tintColor" red="0.32417553659999998" green="0.65236485" blue="0.97215157750000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </segmentedControl>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loM-1X-RTl">
+                                                    <rect key="frame" x="179" y="7" width="116" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="m1F-Mf-m75" firstAttribute="top" secondItem="OvM-BC-PWm" secondAttribute="top" id="BQF-eI-Mvw"/>

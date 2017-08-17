@@ -9,14 +9,14 @@
 import UIKit
 
 protocol ConditionCellDelegate: class {
-    func conditionButtonWasPressed(condition: String)
+    func conditionButtonWasPressed(condition: Condition)
 }
 
 class ConditionCell: UICollectionViewCell {
     
     @IBOutlet var button: UIButton!
     
-    var condition: String!
+    var condition: Condition!
     
     weak var delegate: ConditionCellDelegate?
     

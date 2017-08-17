@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047C9C3F3745F680FECEF819 /* Pods_Symptom_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24812E7FC88EE6ED330DD585 /* Pods_Symptom_Tracker.framework */; };
+		5A20B7191F44BB1400975682 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20B7181F44BB1400975682 /* Condition.swift */; };
+		5A20B71B1F44BB1E00975682 /* Symptom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20B71A1F44BB1E00975682 /* Symptom.swift */; };
+		5A20B71F1F44D9A500975682 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20B71E1F44D9A500975682 /* RealmHelper.swift */; };
 		5A4D80EE1F3CDA9E00948A2C /* ConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */; };
 		5A75B20C1F3E29870053FACF /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B20B1F3E29870053FACF /* SymptomsViewController.swift */; };
 		5A75B20F1F3E3F2D0053FACF /* SymptomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */; };
-		5A94910A1F4209C200521115 /* Symptom Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A9491081F4209C200521115 /* Symptom Tracker.xcdatamodeld */; };
 		5A94A17B1F38FFE000BF6DD0 /* ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD301E1F30D5C4009C7F8A /* ConditionsViewController.swift */; };
 		5ABD301D1F30D5C4009C7F8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */; };
 		5ABD30221F30D5C4009C7F8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABD30201F30D5C4009C7F8A /* Main.storyboard */; };
@@ -19,10 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24812E7FC88EE6ED330DD585 /* Pods_Symptom_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Symptom_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A20B7181F44BB1400975682 /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		5A20B71A1F44BB1E00975682 /* Symptom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Symptom.swift; sourceTree = "<group>"; };
+		5A20B71E1F44D9A500975682 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionCell.swift; sourceTree = "<group>"; };
 		5A75B20B1F3E29870053FACF /* SymptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomCell.swift; sourceTree = "<group>"; };
-		5A9491091F4209C200521115 /* Symptom Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Symptom Tracker.xcdatamodel"; sourceTree = "<group>"; };
 		5ABD30191F30D5C4009C7F8A /* Symptom Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Symptom Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ABD301E1F30D5C4009C7F8A /* ConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +36,8 @@
 		5ABD30231F30D5C4009C7F8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5ABD30261F30D5C4009C7F8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ABD30281F30D5C4009C7F8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C60698EC2CB75468EE347DE /* Pods-Symptom Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Symptom Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Symptom Tracker/Pods-Symptom Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		EF74C2A5B149EA2B7062C896 /* Pods-Symptom Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Symptom Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Symptom Tracker/Pods-Symptom Tracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,12 +45,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047C9C3F3745F680FECEF819 /* Pods_Symptom_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F5672911C710B56B47D06B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C60698EC2CB75468EE347DE /* Pods-Symptom Tracker.debug.xcconfig */,
+				EF74C2A5B149EA2B7062C896 /* Pods-Symptom Tracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A20B71C1F44C6B700975682 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A20B7181F44BB1400975682 /* Condition.swift */,
+				5A20B71A1F44BB1E00975682 /* Symptom.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5A20B71D1F44CD7E00975682 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */,
+				5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		5A75B20D1F3E299F0053FACF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +93,8 @@
 			children = (
 				5ABD301B1F30D5C4009C7F8A /* Symptom Tracker */,
 				5ABD301A1F30D5C4009C7F8A /* Products */,
+				0F5672911C710B56B47D06B0 /* Pods */,
+				A90EC703D020371BBAB9AC8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,16 +110,24 @@
 			isa = PBXGroup;
 			children = (
 				5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */,
-				5A9491081F4209C200521115 /* Symptom Tracker.xcdatamodeld */,
-				5A75B20D1F3E299F0053FACF /* View Controllers */,
-				5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */,
-				5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */,
 				5ABD30201F30D5C4009C7F8A /* Main.storyboard */,
+				5A20B71E1F44D9A500975682 /* RealmHelper.swift */,
+				5A20B71C1F44C6B700975682 /* Models */,
+				5A75B20D1F3E299F0053FACF /* View Controllers */,
+				5A20B71D1F44CD7E00975682 /* Views */,
 				5ABD30231F30D5C4009C7F8A /* Assets.xcassets */,
 				5ABD30251F30D5C4009C7F8A /* LaunchScreen.storyboard */,
 				5ABD30281F30D5C4009C7F8A /* Info.plist */,
 			);
 			path = "Symptom Tracker";
+			sourceTree = "<group>";
+		};
+		A90EC703D020371BBAB9AC8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24812E7FC88EE6ED330DD585 /* Pods_Symptom_Tracker.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5ABD302B1F30D5C4009C7F8A /* Build configuration list for PBXNativeTarget "Symptom Tracker" */;
 			buildPhases = (
+				6E218F4E0134FF6A59AF46C7 /* [CP] Check Pods Manifest.lock */,
 				5ABD30151F30D5C4009C7F8A /* Sources */,
 				5ABD30161F30D5C4009C7F8A /* Frameworks */,
 				5ABD30171F30D5C4009C7F8A /* Resources */,
+				E973D8A5084602E3025DF560 /* [CP] Embed Pods Frameworks */,
+				4BB9D5776273CFF24F41C5B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,16 +201,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BB9D5776273CFF24F41C5B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Symptom Tracker/Pods-Symptom Tracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E218F4E0134FF6A59AF46C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E973D8A5084602E3025DF560 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Symptom Tracker/Pods-Symptom Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5ABD30151F30D5C4009C7F8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5A94A17B1F38FFE000BF6DD0 /* ConditionsViewController.swift in Sources */,
-				5A94910A1F4209C200521115 /* Symptom Tracker.xcdatamodeld in Sources */,
+				5A20B7191F44BB1400975682 /* Condition.swift in Sources */,
 				5A4D80EE1F3CDA9E00948A2C /* ConditionCell.swift in Sources */,
 				5A75B20C1F3E29870053FACF /* SymptomsViewController.swift in Sources */,
 				5A75B20F1F3E3F2D0053FACF /* SymptomCell.swift in Sources */,
+				5A20B71F1F44D9A500975682 /* RealmHelper.swift in Sources */,
+				5A20B71B1F44BB1E00975682 /* Symptom.swift in Sources */,
 				5ABD301D1F30D5C4009C7F8A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +384,7 @@
 		};
 		5ABD302C1F30D5C4009C7F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C60698EC2CB75468EE347DE /* Pods-Symptom Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6MH673HP84;
@@ -298,6 +398,7 @@
 		};
 		5ABD302D1F30D5C4009C7F8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF74C2A5B149EA2B7062C896 /* Pods-Symptom Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6MH673HP84;
@@ -331,19 +432,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5A9491081F4209C200521115 /* Symptom Tracker.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5A9491091F4209C200521115 /* Symptom Tracker.xcdatamodel */,
-			);
-			currentVersion = 5A9491091F4209C200521115 /* Symptom Tracker.xcdatamodel */;
-			path = "Symptom Tracker.xcdatamodeld";
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5ABD30111F30D5C4009C7F8A /* Project object */;
 }

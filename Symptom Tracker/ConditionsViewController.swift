@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ConditionsViewController: UIViewController {
 
-    var conditions = [String]()
+    var conditions: Results<Condition>!
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -39,7 +40,9 @@ class ConditionsViewController: UIViewController {
         
             
             if let conditionsText = alert.textFields?.first?.text {
-                self.conditions.append(conditionsText)
+                let condition = Condition(name: conditionsText)
+                RealmHelper.addCondition(condition: condition)
+                self.conditions = RealmHelper.retrieveCondition()
                 self.collectionView.reloadData()
             }
         }
@@ -64,7 +67,7 @@ class ConditionsViewController: UIViewController {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ConditionCell", for: indexPath) as! ConditionCell
         let condition = conditions[indexPath.item]
-        cell.button.setTitle(condition, for: .normal)
+        cell.button.setTitle(condition.name, for: .normal)
         cell.condition = condition
         cell.delegate = self
         return cell
@@ -74,7 +77,7 @@ class ConditionsViewController: UIViewController {
 
 extension ConditionsViewController: ConditionCellDelegate {
     
-    func conditionButtonWasPressed(condition: String) {
+    func conditionButtonWasPressed(condition: Condition) {
         print(condition)
         performSegue(withIdentifier: "symptomScreen", sender: self)
     }
