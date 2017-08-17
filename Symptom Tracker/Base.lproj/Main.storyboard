@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sym Track-->
+        <!--Conditions-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConditionsViewController" customModule="Symptom_Tracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,14 +72,6 @@
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="CQj-X0-kWI"/>
                                 </connections>
                             </collectionView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Rqd-66-Fp1">
-                                <rect key="frame" x="36" y="619" width="303" height="29"/>
-                                <segments>
-                                    <segment title="Conditions"/>
-                                    <segment title="Records"/>
-                                </segments>
-                                <color key="tintColor" red="0.32417553663253784" green="0.65236485004425049" blue="0.97215157747268677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logomakr_9ZWfmh" translatesAutoresizingMaskIntoConstraints="NO" id="yNN-Ch-Gpg">
                                 <rect key="frame" x="155" y="84" width="65" height="65"/>
                                 <constraints>
@@ -90,20 +82,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rqd-66-Fp1" secondAttribute="bottom" constant="20" id="01K-Yg-S2g"/>
                             <constraint firstItem="yNN-Ch-Gpg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="155" id="2IM-f3-rTl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zJa-yU-P88" secondAttribute="trailing" constant="20" id="Ebw-iV-fhq"/>
                             <constraint firstItem="zJa-yU-P88" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="NSe-TE-iQ1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zJa-yU-P88" secondAttribute="bottom" constant="123" id="Wlh-0R-Nfh"/>
-                            <constraint firstItem="Rqd-66-Fp1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="av4-Ub-SOp"/>
                             <constraint firstItem="yNN-Ch-Gpg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="haV-Iy-UFg"/>
                             <constraint firstAttribute="trailing" secondItem="yNN-Ch-Gpg" secondAttribute="trailing" constant="155" id="kIx-fJ-Zab"/>
                             <constraint firstItem="zJa-yU-P88" firstAttribute="top" secondItem="yNN-Ch-Gpg" secondAttribute="bottom" id="t2a-KO-QXA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Rqd-66-Fp1" secondAttribute="trailing" constant="20" id="tvu-jc-Ed6"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Sym Track" id="qIO-K4-qaz">
+                    <navigationItem key="navigationItem" title="Conditions" id="qIO-K4-qaz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="BHi-RY-w8T">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -125,7 +114,7 @@
         <!--Symptoms-->
         <scene sceneID="V2E-W3-UjN">
             <objects>
-                <viewController id="sEu-vc-vxf" customClass="SymptomsViewController" customModule="Symptom_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sEu-vc-vxf" customClass="SymptomsForConditionViewController" customModule="Symptom_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sUH-ea-KGY"/>
                         <viewControllerLayoutGuide type="bottom" id="txD-Q5-gKC"/>

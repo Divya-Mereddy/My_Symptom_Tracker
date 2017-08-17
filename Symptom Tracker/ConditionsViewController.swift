@@ -18,6 +18,7 @@ class ConditionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        conditions = RealmHelper.retrieveCondition()
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +56,13 @@ class ConditionsViewController: UIViewController {
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "symptomScreen" {
+            let vc = segue.destination as! SymptomsForConditionViewController
+            vc.condition = sender as! Condition
+        }
+    }
 }
 
  extension ConditionsViewController: UICollectionViewDataSource {
@@ -79,7 +87,7 @@ extension ConditionsViewController: ConditionCellDelegate {
     
     func conditionButtonWasPressed(condition: Condition) {
         print(condition)
-        performSegue(withIdentifier: "symptomScreen", sender: self)
+        performSegue(withIdentifier: "symptomScreen", sender: condition)
     }
     
 }

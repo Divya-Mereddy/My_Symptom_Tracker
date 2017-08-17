@@ -1,5 +1,5 @@
 //
-//  SymptomsViewController.swift
+//  SymptomsForConditionViewController.swift
 //  Symptom Tracker
 //
 //  Created by Divya Mereddy on 8/11/17.
@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import RealmSwift
 
-class SymptomsViewController: UIViewController {
+class SymptomsForConditionViewController: UIViewController {
     
-    var symptoms = [String]()
+    var condition: Condition!
     
     @IBOutlet var tableView: UITableView!
     
@@ -26,11 +27,13 @@ class SymptomsViewController: UIViewController {
         let addAction = UIAlertAction(title: "Add Symptom",
                                       style: .default) { (action) in
                                         
-                                        if let symptomText = alert.textFields?.first?.text {
-                                            self.symptoms.append(symptomText)
-                                            self.tableView.reloadData()
-                                        }
+            if let symptomText = alert.textFields?.first?.text {
+                let symptom = Symptom(name: symptomText)
+                RealmHelper.add(symptom: symptom, to: self.condition)
+                self.tableView.reloadData()
+            }
         }
+        
         let cancelAction = UIAlertAction(title: "Cancel",
                                          style: .cancel,
                                          handler: nil)
@@ -39,12 +42,12 @@ class SymptomsViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
 
-    }
+}
 
-extension SymptomsViewController: UITableViewDataSource {
+extension SymptomsForConditionViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return symptoms.count
+        return condition.symptoms.count
     }
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
@@ -52,9 +55,8 @@ extension SymptomsViewController: UITableViewDataSource {
         
             let cell = tableView.dequeueReusableCell(withIdentifier: "SymptomCell", for:
                 indexPath) as! SymptomCell
-            let symptom = symptoms[indexPath.row]
-            cell.label.text = symptom
-            cell.symptom = symptom
+            let symptom = condition.symptoms[indexPath.row]
+            cell.label.text = symptom.name
             return cell
     }
 }

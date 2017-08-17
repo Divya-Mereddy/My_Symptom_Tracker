@@ -12,7 +12,7 @@
 		5A20B71B1F44BB1E00975682 /* Symptom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20B71A1F44BB1E00975682 /* Symptom.swift */; };
 		5A20B71F1F44D9A500975682 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20B71E1F44D9A500975682 /* RealmHelper.swift */; };
 		5A4D80EE1F3CDA9E00948A2C /* ConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */; };
-		5A75B20C1F3E29870053FACF /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B20B1F3E29870053FACF /* SymptomsViewController.swift */; };
+		5A75B20C1F3E29870053FACF /* SymptomsForConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B20B1F3E29870053FACF /* SymptomsForConditionViewController.swift */; };
 		5A75B20F1F3E3F2D0053FACF /* SymptomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */; };
 		5A94A17B1F38FFE000BF6DD0 /* ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD301E1F30D5C4009C7F8A /* ConditionsViewController.swift */; };
 		5ABD301D1F30D5C4009C7F8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */; };
@@ -27,7 +27,7 @@
 		5A20B71A1F44BB1E00975682 /* Symptom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Symptom.swift; sourceTree = "<group>"; };
 		5A20B71E1F44D9A500975682 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionCell.swift; sourceTree = "<group>"; };
-		5A75B20B1F3E29870053FACF /* SymptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
+		5A75B20B1F3E29870053FACF /* SymptomsForConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsForConditionViewController.swift; sourceTree = "<group>"; };
 		5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomCell.swift; sourceTree = "<group>"; };
 		5ABD30191F30D5C4009C7F8A /* Symptom Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Symptom Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				5ABD301E1F30D5C4009C7F8A /* ConditionsViewController.swift */,
-				5A75B20B1F3E29870053FACF /* SymptomsViewController.swift */,
+				5A75B20B1F3E29870053FACF /* SymptomsForConditionViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 				5A94A17B1F38FFE000BF6DD0 /* ConditionsViewController.swift in Sources */,
 				5A20B7191F44BB1400975682 /* Condition.swift in Sources */,
 				5A4D80EE1F3CDA9E00948A2C /* ConditionCell.swift in Sources */,
-				5A75B20C1F3E29870053FACF /* SymptomsViewController.swift in Sources */,
+				5A75B20C1F3E29870053FACF /* SymptomsForConditionViewController.swift in Sources */,
 				5A75B20F1F3E3F2D0053FACF /* SymptomCell.swift in Sources */,
 				5A20B71F1F44D9A500975682 /* RealmHelper.swift in Sources */,
 				5A20B71B1F44BB1E00975682 /* Symptom.swift in Sources */,
