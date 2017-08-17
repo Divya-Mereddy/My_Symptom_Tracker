@@ -174,9 +174,12 @@
                                                         <action selector="intensityControlValueDidChangeWithSender:" destination="JqC-u2-5H7" eventType="valueChanged" id="4ER-pz-sig"/>
                                                     </connections>
                                                 </segmentedControl>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11/26/2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loM-1X-RTl">
-                                                    <rect key="frame" x="206" y="7" width="89" height="28"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11/26/2017" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loM-1X-RTl">
+                                                    <rect key="frame" x="16" y="0.0" width="271" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="271" id="DUk-VU-7No"/>
+                                                        <constraint firstAttribute="height" constant="40" id="pMK-6M-NvX"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -184,9 +187,13 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="m1F-Mf-m75" firstAttribute="top" secondItem="OvM-BC-PWm" secondAttribute="top" id="BQF-eI-Mvw"/>
+                                                <constraint firstItem="loM-1X-RTl" firstAttribute="top" secondItem="OvM-BC-PWm" secondAttribute="top" id="K01-Xy-4c6"/>
                                                 <constraint firstItem="dw8-cW-Tda" firstAttribute="trailing" secondItem="mok-Hs-fTX" secondAttribute="trailing" id="OX5-uR-l3t"/>
                                                 <constraint firstAttribute="trailing" secondItem="m1F-Mf-m75" secondAttribute="trailing" id="QxM-aD-fQM"/>
                                                 <constraint firstItem="mok-Hs-fTX" firstAttribute="top" secondItem="OvM-BC-PWm" secondAttribute="top" id="Tcr-y0-f0x"/>
+                                                <constraint firstItem="dw8-cW-Tda" firstAttribute="top" secondItem="loM-1X-RTl" secondAttribute="bottom" constant="14.5" id="X2D-kK-2zd"/>
+                                                <constraint firstItem="loM-1X-RTl" firstAttribute="leading" secondItem="OvM-BC-PWm" secondAttribute="leading" constant="16" id="YFa-rF-nfA"/>
+                                                <constraint firstAttribute="trailing" secondItem="loM-1X-RTl" secondAttribute="trailing" constant="16" id="YHM-kY-SEN"/>
                                                 <constraint firstItem="m1F-Mf-m75" firstAttribute="leading" secondItem="OvM-BC-PWm" secondAttribute="leading" id="Zfc-ny-eXN"/>
                                                 <constraint firstItem="mok-Hs-fTX" firstAttribute="height" secondItem="m1F-Mf-m75" secondAttribute="height" id="eU5-jH-H06"/>
                                                 <constraint firstItem="mok-Hs-fTX" firstAttribute="leading" secondItem="OvM-BC-PWm" secondAttribute="leading" constant="16" id="l1L-hI-xV6"/>
