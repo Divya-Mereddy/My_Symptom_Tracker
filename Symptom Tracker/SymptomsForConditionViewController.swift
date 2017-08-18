@@ -12,8 +12,20 @@ import RealmSwift
 class SymptomsForConditionViewController: UIViewController {
     
     var condition: Condition!
+    var sortedSymptoms: Results<Symptom>!
     
     @IBOutlet var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        symptomSort()
+    }
+    
+    func symptomSort() {
+        sortedSymptoms = condition
+                        .symptoms
+                        .sorted(byKeyPath: "creationDate", ascending: false)
+    }
     
     @IBAction func plusButtonWasPressed(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Add your symptom",
@@ -30,6 +42,7 @@ class SymptomsForConditionViewController: UIViewController {
             if let symptomText = alert.textFields?.first?.text {
                 let symptom = Symptom(name: symptomText)
                 RealmHelper.add(symptom: symptom, to: self.condition)
+                self.symptomSort()
                 self.tableView.reloadData()
             }
         }
@@ -55,7 +68,7 @@ extension SymptomsForConditionViewController: UITableViewDataSource {
         
             let cell = tableView.dequeueReusableCell(withIdentifier: "SymptomCell", for:
                 indexPath) as! SymptomCell
-            let symptom = condition.symptoms[indexPath.row]
+            let symptom = sortedSymptoms[indexPath.row]
             cell.symptom = symptom
             cell.label.text = symptom.name
             cell.displayTimeLabel.text = symptom.dateHash

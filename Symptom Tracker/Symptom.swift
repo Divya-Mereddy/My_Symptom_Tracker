@@ -20,11 +20,13 @@ class Symptom: Object {
     dynamic var name = ""
     dynamic var intensity = 0
     dynamic var dateHash = ""
+    dynamic var creationDate = Date()
     
     convenience init(name: String, intensity: Int = 5) {
         self.init()
         self.name = name
         self.intensity = intensity
         self.dateHash = Symptom.currentDateHash
+        self.creationDate = Date()
     }
 }
