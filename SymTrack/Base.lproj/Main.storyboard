@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="epa-Zc-1Bv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="epa-Zc-1Bv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Light</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Conditions-->
         <scene sceneID="tne-QT-ifu">
@@ -22,8 +30,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zJa-yU-P88">
-                                <rect key="frame" x="36" y="149" width="303" height="395"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024-1" translatesAutoresizingMaskIntoConstraints="NO" id="yNN-Ch-Gpg">
+                                <rect key="frame" x="155" y="84" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="7cT-oL-eXm"/>
+                                    <constraint firstAttribute="width" constant="65" id="F1J-d5-gqk"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zJa-yU-P88">
+                                <rect key="frame" x="36" y="189" width="303" height="395"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="395" id="JLC-8U-26w"/>
@@ -72,23 +87,15 @@
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="CQj-X0-kWI"/>
                                 </connections>
                             </collectionView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024-1" translatesAutoresizingMaskIntoConstraints="NO" id="yNN-Ch-Gpg">
-                                <rect key="frame" x="155" y="84" width="65" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="7cT-oL-eXm"/>
-                                    <constraint firstAttribute="width" constant="65" id="F1J-d5-gqk"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yNN-Ch-Gpg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="155" id="2IM-f3-rTl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zJa-yU-P88" secondAttribute="trailing" constant="20" id="Ebw-iV-fhq"/>
                             <constraint firstItem="zJa-yU-P88" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="NSe-TE-iQ1"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zJa-yU-P88" secondAttribute="bottom" constant="123" id="Wlh-0R-Nfh"/>
                             <constraint firstItem="yNN-Ch-Gpg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="haV-Iy-UFg"/>
                             <constraint firstAttribute="trailing" secondItem="yNN-Ch-Gpg" secondAttribute="trailing" constant="155" id="kIx-fJ-Zab"/>
-                            <constraint firstItem="zJa-yU-P88" firstAttribute="top" secondItem="yNN-Ch-Gpg" secondAttribute="bottom" id="t2a-KO-QXA"/>
+                            <constraint firstItem="zJa-yU-P88" firstAttribute="top" secondItem="yNN-Ch-Gpg" secondAttribute="bottom" constant="20" id="t2a-KO-QXA"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -248,7 +255,7 @@
             <objects>
                 <navigationController id="epa-Zc-1Bv" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HIQ-n1-Yn4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.32417553659999998" green="0.65236485" blue="0.97215157750000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">

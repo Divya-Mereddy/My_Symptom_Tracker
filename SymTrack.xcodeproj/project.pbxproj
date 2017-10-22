@@ -19,6 +19,7 @@
 		5ABD30221F30D5C4009C7F8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABD30201F30D5C4009C7F8A /* Main.storyboard */; };
 		5ABD30241F30D5C4009C7F8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ABD30231F30D5C4009C7F8A /* Assets.xcassets */; };
 		5ABD30271F30D5C4009C7F8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABD30251F30D5C4009C7F8A /* LaunchScreen.storyboard */; };
+		5ABF40C21F9D4F6F0000013D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF40C11F9D4F6F0000013D /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +30,14 @@
 		5A4D80ED1F3CDA9E00948A2C /* ConditionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionCell.swift; sourceTree = "<group>"; };
 		5A75B20B1F3E29870053FACF /* SymptomsForConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsForConditionViewController.swift; sourceTree = "<group>"; };
 		5A75B20E1F3E3F2D0053FACF /* SymptomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomCell.swift; sourceTree = "<group>"; };
-		5ABD30191F30D5C4009C7F8A /* Symptom Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Symptom Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABD30191F30D5C4009C7F8A /* SymTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ABD301E1F30D5C4009C7F8A /* ConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsViewController.swift; sourceTree = "<group>"; };
 		5ABD30211F30D5C4009C7F8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5ABD30231F30D5C4009C7F8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5ABD30261F30D5C4009C7F8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ABD30281F30D5C4009C7F8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ABF40C11F9D4F6F0000013D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9C60698EC2CB75468EE347DE /* Pods-Symptom Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Symptom Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Symptom Tracker/Pods-Symptom Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		EF74C2A5B149EA2B7062C896 /* Pods-Symptom Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Symptom Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Symptom Tracker/Pods-Symptom Tracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +93,8 @@
 		5ABD30101F30D5C4009C7F8A = {
 			isa = PBXGroup;
 			children = (
-				5ABD301B1F30D5C4009C7F8A /* Symptom Tracker */,
+				5ABF40C11F9D4F6F0000013D /* Default-568h@2x.png */,
+				5ABD301B1F30D5C4009C7F8A /* SymTrack */,
 				5ABD301A1F30D5C4009C7F8A /* Products */,
 				0F5672911C710B56B47D06B0 /* Pods */,
 				A90EC703D020371BBAB9AC8B /* Frameworks */,
@@ -101,12 +104,12 @@
 		5ABD301A1F30D5C4009C7F8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5ABD30191F30D5C4009C7F8A /* Symptom Tracker.app */,
+				5ABD30191F30D5C4009C7F8A /* SymTrack.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5ABD301B1F30D5C4009C7F8A /* Symptom Tracker */ = {
+		5ABD301B1F30D5C4009C7F8A /* SymTrack */ = {
 			isa = PBXGroup;
 			children = (
 				5ABD301C1F30D5C4009C7F8A /* AppDelegate.swift */,
@@ -119,7 +122,7 @@
 				5ABD30251F30D5C4009C7F8A /* LaunchScreen.storyboard */,
 				5ABD30281F30D5C4009C7F8A /* Info.plist */,
 			);
-			path = "Symptom Tracker";
+			path = SymTrack;
 			sourceTree = "<group>";
 		};
 		A90EC703D020371BBAB9AC8B /* Frameworks */ = {
@@ -133,9 +136,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5ABD30181F30D5C4009C7F8A /* Symptom Tracker */ = {
+		5ABD30181F30D5C4009C7F8A /* SymTrack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5ABD302B1F30D5C4009C7F8A /* Build configuration list for PBXNativeTarget "Symptom Tracker" */;
+			buildConfigurationList = 5ABD302B1F30D5C4009C7F8A /* Build configuration list for PBXNativeTarget "SymTrack" */;
 			buildPhases = (
 				6E218F4E0134FF6A59AF46C7 /* [CP] Check Pods Manifest.lock */,
 				5ABD30151F30D5C4009C7F8A /* Sources */,
@@ -148,9 +151,9 @@
 			);
 			dependencies = (
 			);
-			name = "Symptom Tracker";
+			name = SymTrack;
 			productName = "Symptom Tracker";
-			productReference = 5ABD30191F30D5C4009C7F8A /* Symptom Tracker.app */;
+			productReference = 5ABD30191F30D5C4009C7F8A /* SymTrack.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -160,7 +163,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Divya Mereddy";
 				TargetAttributes = {
 					5ABD30181F30D5C4009C7F8A = {
@@ -170,7 +173,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5ABD30141F30D5C4009C7F8A /* Build configuration list for PBXProject "Symptom Tracker" */;
+			buildConfigurationList = 5ABD30141F30D5C4009C7F8A /* Build configuration list for PBXProject "SymTrack" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -183,7 +186,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5ABD30181F30D5C4009C7F8A /* Symptom Tracker */,
+				5ABD30181F30D5C4009C7F8A /* SymTrack */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ABD30271F30D5C4009C7F8A /* LaunchScreen.storyboard in Resources */,
+				5ABF40C21F9D4F6F0000013D /* Default-568h@2x.png in Resources */,
 				5ABD30241F30D5C4009C7F8A /* Assets.xcassets in Resources */,
 				5ABD30221F30D5C4009C7F8A /* Main.storyboard in Resources */,
 			);
@@ -297,7 +301,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -305,7 +311,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -348,7 +358,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -356,7 +368,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -388,7 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6MH673HP84;
-				INFOPLIST_FILE = "Symptom Tracker/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SymTrack/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.makeschool.Symptom-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -402,7 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6MH673HP84;
-				INFOPLIST_FILE = "Symptom Tracker/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SymTrack/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.makeschool.Symptom-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,7 +429,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5ABD30141F30D5C4009C7F8A /* Build configuration list for PBXProject "Symptom Tracker" */ = {
+		5ABD30141F30D5C4009C7F8A /* Build configuration list for PBXProject "SymTrack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5ABD30291F30D5C4009C7F8A /* Debug */,
@@ -422,7 +438,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5ABD302B1F30D5C4009C7F8A /* Build configuration list for PBXNativeTarget "Symptom Tracker" */ = {
+		5ABD302B1F30D5C4009C7F8A /* Build configuration list for PBXNativeTarget "SymTrack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5ABD302C1F30D5C4009C7F8A /* Debug */,

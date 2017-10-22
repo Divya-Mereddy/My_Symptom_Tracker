@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Symptom Tracker.xcodeproj">
+      location = "group:/Users/Divya/Desktop/idk/Symptom Tracker/SymTrack.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
