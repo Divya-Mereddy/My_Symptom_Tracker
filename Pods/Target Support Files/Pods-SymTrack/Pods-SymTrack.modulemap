@@ -1,0 +1,6 @@
+framework module Pods_SymTrack {
+  umbrella header "Pods-SymTrack-umbrella.h"
+
+  export *
+  module * { export * }
+}

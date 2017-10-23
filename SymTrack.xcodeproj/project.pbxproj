@@ -21,6 +21,7 @@
 		5ABD30271F30D5C4009C7F8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABD30251F30D5C4009C7F8A /* LaunchScreen.storyboard */; };
 		5ABF40C21F9D4F6F0000013D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF40C11F9D4F6F0000013D /* Default-568h@2x.png */; };
 		5ABF40C41F9D51C80000013D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF40C31F9D51C80000013D /* LaunchScreen.storyboard */; };
+		9E2C9B042783FF16EB709859 /* Pods_SymTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993763A2C4AAEA7AD267B19D /* Pods_SymTrack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +41,9 @@
 		5ABD30281F30D5C4009C7F8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ABF40C11F9D4F6F0000013D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5ABF40C31F9D51C80000013D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9C60698EC2CB75468EE347DE /* Pods-Symptom Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Symptom Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Symptom Tracker/Pods-Symptom Tracker.debug.xcconfig"; sourceTree = "<group>"; };
-		EF74C2A5B149EA2B7062C896 /* Pods-Symptom Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Symptom Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Symptom Tracker/Pods-Symptom Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		993763A2C4AAEA7AD267B19D /* Pods_SymTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SymTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA1F3B38841A159BAE69C19D /* Pods-SymTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymTrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-SymTrack/Pods-SymTrack.release.xcconfig"; sourceTree = "<group>"; };
+		E8915FED9EF6B6C60D16043B /* Pods-SymTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymTrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SymTrack/Pods-SymTrack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				047C9C3F3745F680FECEF819 /* Pods_Symptom_Tracker.framework in Frameworks */,
+				9E2C9B042783FF16EB709859 /* Pods_SymTrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +62,8 @@
 		0F5672911C710B56B47D06B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9C60698EC2CB75468EE347DE /* Pods-Symptom Tracker.debug.xcconfig */,
-				EF74C2A5B149EA2B7062C896 /* Pods-Symptom Tracker.release.xcconfig */,
+				E8915FED9EF6B6C60D16043B /* Pods-SymTrack.debug.xcconfig */,
+				BA1F3B38841A159BAE69C19D /* Pods-SymTrack.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				24812E7FC88EE6ED330DD585 /* Pods_Symptom_Tracker.framework */,
+				993763A2C4AAEA7AD267B19D /* Pods_SymTrack.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -223,7 +227,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Symptom Tracker/Pods-Symptom Tracker-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SymTrack/Pods-SymTrack-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6E218F4E0134FF6A59AF46C7 /* [CP] Check Pods Manifest.lock */ = {
@@ -253,7 +257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Symptom Tracker/Pods-Symptom Tracker-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SymTrack/Pods-SymTrack-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -405,7 +409,7 @@
 		};
 		5ABD302C1F30D5C4009C7F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C60698EC2CB75468EE347DE /* Pods-Symptom Tracker.debug.xcconfig */;
+			baseConfigurationReference = E8915FED9EF6B6C60D16043B /* Pods-SymTrack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -425,7 +429,7 @@
 		};
 		5ABD302D1F30D5C4009C7F8A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF74C2A5B149EA2B7062C896 /* Pods-Symptom Tracker.release.xcconfig */;
+			baseConfigurationReference = BA1F3B38841A159BAE69C19D /* Pods-SymTrack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

@@ -4,39 +4,13 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Symptom Tracker.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Realm.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RealmSwift.xcscheme</key>
+		<key>Pods-SymTrack.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>BDE5DBD65FC46D906C55E5863FFAF726</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CCCF7E689FE3BEC66B6D7265F3E20911</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DE0783263EBF86C62C9A42A9EA4215AF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
